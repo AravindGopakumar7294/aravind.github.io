@@ -8349,6 +8349,17 @@ input[type=range]::-ms-thumb {
   background-color: #4CAF50;
 }
 
+.setwidth{
+  width: 100%!important;
+  height: 150px!important;
+}
+.cardCenter{
+  width:285px;
+  max-width:285px;
+  display:inline-block;
+  margin: 0 auto;
+}
+/* 
 .carousel {
   overflow: hidden;
   position: relative;
@@ -8440,7 +8451,7 @@ input[type=range]::-ms-thumb {
 .carousel.scrolling .carousel-item .materialboxed,
 .carousel .carousel-item:not(.active) .materialboxed {
   pointer-events: none;
-}
+} */
 
 .tap-target-wrapper {
   width: 800px;
@@ -9073,4 +9084,5 @@ input[type=range]::-ms-thumb {
     text-align: center;
     margin-top: 1.2rem;
   }
+
 }
