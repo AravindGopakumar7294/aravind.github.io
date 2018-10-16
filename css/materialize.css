@@ -9090,4 +9090,12 @@ input[type=range]::-ms-thumb {
     width: 100%!important;
     display: inline-block!important;
   }
+  .searchBarBox{
+    background: rgba(74, 74, 74, 0.54);
+    right: 44% !important;
+    padding: 5px;
+    position: absolute;
+    z-index: 2;
+    width: 14%;
+}
 }
