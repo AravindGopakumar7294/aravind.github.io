@@ -9090,6 +9090,11 @@ input[type=range]::-ms-thumb {
     width: 100%!important;
     display: inline-block!important;
   }
+  @media only screen and (max-width: 600px) {
+    .imageCenter{
+      padding-left: 40%;
+    }
+  }
   .searchBarBox{
     background: rgba(74, 74, 74, 0.54);
     right: 44% !important;
