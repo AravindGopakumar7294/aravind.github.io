@@ -4,6 +4,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Aravind G">
   <title>Aravind G</title>
 
   <!-- CSS  -->
@@ -318,7 +319,8 @@
                   main projects done.</li>
                 <li class="list-group-item list-group-item-success">Created and hosted a website for Al-Wassen Est,
                   Kuwait.</li>
-                <li class="list-group-item">Completed a 2 months training in Asp.net.</li>
+                <li class="list-group-item">Conducted a workshop on ASP.net for college
+                    students.</li>
                 <li class="list-group-item list-group-item-danger">Created and hosted a website and registration app
                   for college tech fest.</li>
               </ul>
@@ -461,7 +463,6 @@
   <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR_QYGxx2P3-rKDEEnDU1FD4pzKRBy0m-NDYIP6sN4onZ0kke77PueRBpuVjZn6SWlH2y2_W4BKxlW7/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
   <footer class="page-footer teal">
     <div class="container">
-
         <div class="row center" style="margin-bottom:10px!important">
             <h4 class="header teal-text text-lighten-2 col s12 light" style="font-weight:bold;color: white!important">Aravind
               Gopakumar</h4>
@@ -728,6 +729,44 @@
       $(this).find('.card').toggleClass('flipped');
 
     });
+
+
+    $('a[href*="#"]')
+      // Remove links that don't actually link to anything
+      .not('[href="#"]')
+      .not('[href="#0"]')
+      .click(function (event) {
+        // On-page links
+        if (
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
+          location.hostname == this.hostname
+        ) {
+          // Figure out element to scroll to
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          // Does a scroll target exist?
+          if (target.length) {
+            // Only prevent default if animation is actually gonna happen
+            event.preventDefault();
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000, function () {
+              // Callback after animation
+              // Must change focus!
+              var $target = $(target);
+              $target.focus();
+              if ($target.is(":focus")) { // Checking if the target was focused
+                return false;
+              } else {
+                //$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                $target.focus(); // Set focus again
+              };
+            });
+          }
+        }
+      });
+
 
   </script>
 
