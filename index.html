@@ -338,8 +338,7 @@
                     </h6>
                   </div>
                   <div id="more" class="panel-collapse collapse">
-                    <li class="list-group-item list-group-item-light">Conducted a workshop on ASP.net for college
-                      students.</li>
+                    <li class="list-group-item list-group-item-light">Completed a 2 months training in Asp.net.</li>
 
                     <li class="list-group-item list-group-item-primary">Participated in 7 days Workshop on ASP.net.</li>
                     <li class="list-group-item list-group-item-warning">Active member in social club and programming
@@ -347,6 +346,9 @@
                     <li class="list-group-item list-group-item-info">Participated in 7 days Workshop on Web
                       Technologies.</li>
                     <li class="list-group-item list-group-item-dark">Participated in 6 days Workshop on Android.</li>
+                    <li class="list-group-item list-group-item-danger">Core committee member - Bootcamp, Saintigts College of Engineering.</li>
+                      <li class="list-group-item list-group-item-success">Core committee member - Samyuktha 16, TechFest, Saitgits College of Engineering.</li>
+                      <li class="list-group-item list-group-item-secondary">Headed the main event (Best Personality) - Samyuktha 16, TechFest, Saitgits College of Engineering.</li>
                     <!-- <div class="panel-footer">Footer</div> -->
                   </div>
                 </div>
@@ -370,7 +372,7 @@
           <h5 class="header col s12 light">Best Outgoing Student, MCA 2014 - 2017</h5>
         </div>
         <div class="row center">
-          <h5 class="header col s12 light">Semester topper(S6 MCA) with 95.6% aggregate</h5>
+          <h5 class="header col s12 light">Semester topper (S6 MCA) with 95.6% aggregate</h5>
         </div>
         <div class="row center">
           <h6 class="header col s12 light">( Saitgits College of Engineering, Kottayam )</h6>
@@ -466,7 +468,7 @@
     <div class="container">
       <div class="row center" style="margin-bottom:10px!important">
         <h4 class="header teal-text text-lighten-2 col s12 light" style="font-weight:bold;color: white!important">Aravind
-          G</h4>
+          Gopakumar</h4>
       </div>
       <div class="row center" style="margin-bottom:0px!important">
         <h6 class="header col s12 light">Be Yourself</h6>
@@ -675,11 +677,6 @@
     });
   </script>
 
-  <script>
-    var image = '<img src="images/fb.jpg"" width="100%">';
-    $('#popover').popover({ placement: 'top', content: image, html: true });
-  </script>
-
   <script type="text/javascript" language="javascript">
     $('#logo').bind('contextmenu', function (e) {
       return false;
@@ -706,44 +703,6 @@
         By.style.display = "none";
       }
     }
-
-    $('a[href*="#"]')
-      // Remove links that don't actually link to anything
-      .not('[href="#"]')
-      .not('[href="#0"]')
-      .click(function (event) {
-        // On-page links
-        if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-          &&
-          location.hostname == this.hostname
-        ) {
-          // Figure out element to scroll to
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          // Does a scroll target exist?
-          if (target.length) {
-            // Only prevent default if animation is actually gonna happen
-            event.preventDefault();
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000, function () {
-              // Callback after animation
-              // Must change focus!
-              var $target = $(target);
-              $target.focus();
-              if ($target.is(":focus")) { // Checking if the target was focused
-                return false;
-              } else {
-                //$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                $target.focus(); // Set focus again
-              };
-            });
-          }
-        }
-      });
-
-
 
     $('.flip').hover(function () {
       $(this).find('.card').toggleClass('flipped');
