@@ -9090,7 +9090,7 @@ input[type=range]::-ms-thumb {
     width: 100%!important;
     display: inline-block!important;
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (min-width: 600px) and (max-width: 992px){
     .imageCenter{
       padding-left: 40%!important;
     }
